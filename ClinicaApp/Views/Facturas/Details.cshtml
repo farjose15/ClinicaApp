@@ -1,0 +1,58 @@
+﻿@model ClinicaApp.Models.Facturas
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Facturas</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.fecha)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fecha)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.servicio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.servicio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.monto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.monto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.metodo_pago)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.metodo_pago)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Pacientes.nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pacientes.nombre)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id_factura }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

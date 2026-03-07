@@ -1,0 +1,42 @@
+﻿@model ClinicaApp.Models.Detalle_Receta
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Detalle_Receta</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.cantidad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cantidad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Medicamentos.nombre_medicamento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Medicamentos.nombre_medicamento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Recetas.indicaciones)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Recetas.indicaciones)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id_detalle }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,69 @@
+﻿@model IEnumerable<ClinicaApp.Models.Historia_Clinica>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.fecha_consulta)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sintomas)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.diagnostico)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tratamiento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.observaciones)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Medicos.nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Pacientes.nombre)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.fecha_consulta)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sintomas)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.diagnostico)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tratamiento)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.observaciones)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Medicos.nombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Pacientes.nombre)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id_historia }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id_historia }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id_historia })
+        </td>
+    </tr>
+}
+
+</table>

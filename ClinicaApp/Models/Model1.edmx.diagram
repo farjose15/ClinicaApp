@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="47bcd16ebd43457f9bd1de77fa12d6d3" Name="Diagram1" ZoomLevel="55">
+        <EntityTypeShape EntityType="ClinicaModel.Citas" Width="1.5" PointX="3" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClinicaModel.Detalle_Receta" Width="1.5" PointX="5.25" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClinicaModel.Especialidades" Width="1.5" PointX="1.5" PointY="14" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClinicaModel.Facturas" Width="1.5" PointX="3" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClinicaModel.Historia_Clinica" Width="1.5" PointX="6" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClinicaModel.Medicamentos" Width="1.5" PointX="3" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClinicaModel.Medicos" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClinicaModel.Pacientes" Width="1.5" PointX="0.75" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClinicaModel.Recetas" Width="1.5" PointX="3" PointY="2.625" IsExpanded="true" />
+        <AssociationConnector Association="ClinicaModel.FK__Citas__id_medico__403A8C7D" ManuallyRouted="false" />
+        <AssociationConnector Association="ClinicaModel.FK__Citas__id_pacien__3F466844" ManuallyRouted="false" />
+        <AssociationConnector Association="ClinicaModel.FK__Detalle_R__id_me__4D94879B" ManuallyRouted="false" />
+        <AssociationConnector Association="ClinicaModel.FK__Detalle_R__id_re__4CA06362" ManuallyRouted="false" />
+        <AssociationConnector Association="ClinicaModel.FK__Medicos__id_espe__3C69FB99" ManuallyRouted="false" />
+        <AssociationConnector Association="ClinicaModel.FK__Facturas__id_pac__5070F446" ManuallyRouted="false" />
+        <AssociationConnector Association="ClinicaModel.FK__Historia___id_me__440B1D61" ManuallyRouted="false" />
+        <AssociationConnector Association="ClinicaModel.FK__Historia___id_pa__4316F928" ManuallyRouted="false" />
+        <AssociationConnector Association="ClinicaModel.FK__Recetas__id_medi__49C3F6B7" ManuallyRouted="false" />
+        <AssociationConnector Association="ClinicaModel.FK__Recetas__id_paci__48CFD27E" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,80 @@
+﻿@model ClinicaApp.Models.Historia_Clinica
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Historia_Clinica</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.fecha_consulta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fecha_consulta)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sintomas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sintomas)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.diagnostico)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.diagnostico)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tratamiento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tratamiento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.observaciones)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.observaciones)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Medicos.nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Medicos.nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Pacientes.nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pacientes.nombre)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
