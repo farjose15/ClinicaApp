@@ -9,7 +9,7 @@
 
 @using (Html.BeginForm())
 {
-    @Html.AntiForgeryToken()
+    @Html.AntiForgeryToken()    
     
     <div class="form-horizontal">
         <h4>Detalle_Receta</h4>
@@ -50,7 +50,7 @@
 }
 
 <div>
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Volver", "Index", null, new { @class = "btn btn-default" })
 </div>
 
 @section Scripts {
